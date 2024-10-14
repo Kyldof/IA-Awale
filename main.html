@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Présentation du projet</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/logo/risitas.png">
+        <link href="CSS/main.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="corp">
+            <header>
+                <div id="menu">
+                    <img id="logo" alt="logo université" src="images/logo/ua_h_blanc_ecran.png" onclick="window.location.href='https://ent.univ-angers.fr'">
+                    <ul>
+                        <li><a href="groupe.html">Groupe</a></li>
+                        <li>
+                            <a href="explication_jeu.html">Explication</a>
+                            <div class="hiden">
+                                <a href="explication_jeu.html#Jeu">Jeu</a>
+                                <a href="explication_ia.html#IA">IA</a>                
+                            </div>
+
+                        </li>
+                        
+                        <li><a href="main.html">Menu</a></li>
+
+                    
+                    </ul>
+                </div>
+            </header>
+            <main>
+                <div class="titre">
+                <h1>Projet Awale</h1>
+                <h2>Moreau Martin<br>Ronné Kyllian</h2>
+                </div>
+                <div class="principal">
+                    <div id="presentation" class="partie">
+                        <h2>Présentation de l'Awalé</h2>
+                        <p>L'awalé ou awélé est un jeu de société à deux joueurs créé en Afrique.<br/>
+                            C'est le plus répandu des jeux de la famille Mancala (jeux de semailles), ensemble de jeux africains de type « compter et capturer » dans lesquels on distribue des cailloux dans des coupelles ou des trous. <br/>
+                            Il est disposé de façon à ce que chaque joueur possède 6 cases, contenant 4 cailloux chacune, en face de lui. Le but du jeu est d'être celui qui à la fin de la partie en possède le plus. <br/>
+                            Il existe énormément de variantes à ce jeu, nous avons donc simplifié quelques règles afin de nous faciliter la programmation de ce dernier.</p>
+                    </div>
+
+                    <div id="regles" class="partie">
+                        <h2>Règles du jeu</h2>
+                        <h3>Commencement:</h3>
+                        <p>- La partie commence avec chacune des cases du plateau rempli de quatre cailloux chacune hormis les greniers des joueurs qui sont vides.</p>
+
+                        <img class="schema" alt="plateau de jeu de départ" src="images/No_background/Situation_de_départ-removebg-preview.png">
+                            
+                        <p>- Le premier joueur choisit une case à jouer parmi ses six et distribue ses cailloux dans le sens antihoraire.
+                        Si jamais il passe par son grenier il y dépose un caillou mais n'en dépose pas dans celui de son adversaire.</p>
+                        
+                        <img class="schema" alt="premier coup" src="images/No_background/Premier_coup-removebg-preview.png">
+
+                        <p>- C'est maintenant au tour du second joueur de jouer une de ses cases et ainsi de suite jusqu'à la fin de la partie.</p>
+                        
+                        <h3>Quand est-ce qu'une partie se termine?</h3>
+                        <p>Une partie est terminée lorsqu'un joueur ne possède plus aucun caillou dans ses cases. On ramasse donc tous les cailloux restants du plateau et on les dépose dans le grenier adverse.
+                        </p>
+                        
+                        <img class="schema" alt="fin de partie 1)" src="images/No_background/fin_de_partie-removebg-preview.png">
+                        <img class="schema" alt="fin de partie 2)" src="images/No_background/fin_de_partie_2_-removebg-preview.png">
+                        
+
+                        <h3>Comment faire pour gagner des cailloux?</h3>
+                        <p>Il y a 2 manières de récupérer des cailloux, la première est de se les distribuer un à un dans son grenier mais cela est long et peu efficace.<br/>
+                        La deuxième manière est de terminer sa distribution dans une de ses cases vides, ce qui nous permet de voler les cailloux adverses de la case opposée.</p>
+                        
+                        <img class="schema" alt="ramassage de cailloux 1" src="images/No_background/Ramassage_de_cailloux-removebg-preview.png">
+                        <img class="schema" alt="ramassage de cailloux 2" src="images/No_background/Ramassage_de_cailloux__2_-removebg-preview.png">
+                        <img class="schema" alt="ramassage de cailloux 3" src="images/No_background/Ramassage_de_cailloux__3_-removebg-preview.png">
+                        
+                        
+                    </div>
+                    <div id="Telecharger" class="partie">
+                        <a href="awale.zip" download="awale.zip">Télécharger le code</a>
+                    <br/>
+                    <a style="font-size: 10px" href="mailto:kyllian.ronne@etud.univ-angers.fr">kyllian.ronne@etud.univ-angers.fr</a>
+                    <a style="font-size: 10px" href="mailto:martmoreau@etud.univ-angers.fr">martmoreau@etud.univ-angers.fr</a>
+                </div>               
+                </div>
+            </main>
+
+            <footer>
+
+            </footer>
+        </div>
+    </body>
+
+</html>

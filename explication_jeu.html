@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Développement application</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/logo/risitas.png">
+        <link href="CSS/main.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="corp">
+            <header>
+                <div id="menu">
+                    <img id="logo" alt="logo université" src="images/logo/ua_h_blanc_ecran.png" onclick="window.location.href='https://ent.univ-angers.fr'">
+                    <ul>
+                        <li><a href="groupe.html">Groupe</a></li>
+                        <li>
+                            <a href="explication_jeu.html">Explication</a>
+                            <div class="hiden">
+                                <a href="explication_jeu.html#Jeu">Jeu</a>
+                                <a href="explication_ia.html#IA">IA</a>                
+                            </div>
+
+                        </li>
+                        
+                        <li><a href="main.html">Menu</a></li>
+
+                    
+                    </ul>
+                </div>
+            </header>
+            <main>
+                <div class="titre">
+                    <h1>Développement du jeu et son IA</h1>
+                </div>
+                <div class="principal">
+                    <div id="Jeu" class="partie">
+                        <h2>Développement du jeu</h2>
+                        <p>La programmation du jeu d’Awalé nous a pris une semaine entière a réaliser. Les deux premiers jours, nous avions commencé sans indication particulière par créer Une classe nommée « Awale» qui nous aurait permis de créer un objet de classe contenant un plateau de jeu avec le score des deux joueurs ainsi que les « cailloux » disponible en jeu. Ensuite le mercredi de la première semaine de travail le professeur nous a donné plus d’indication et nous avons dû recommencer entièrement notre programme pour suivre le cahier des charges donné par le professeur et ainsi avoir la même base que tous les autres groupes ayant le même sujet que nous, en fin de première semaine nous avions donc terminé la partie sur la programmation du jeu et nous pouvions donc enfin commencer la programmation de notre Intelligence Artificiel.
+                        </p>
+                        <p>Voici les différentes fonctions présente dans le fichier Awale.py qui nous a permis de faire tourner le jeu :</p>
+                        <ul>
+                            <li><a href="#jeu_initialiser">jeu_initialiser</a></li>
+                            <li><a href="#adversaire">adversaire</a></li>
+                            <li><a href="#trou_suivant">trou_suivant</a></li>
+                            <li><a href="#jeu_afficher">jeu_afficher</a></li>
+                            <li><a href="#jeu_est_termine">jeu_est_termine</a></li>
+                            <li><a href="#jeu_ramasser_billes">jeu_ramasser_billes</a></li>
+                            <li><a href="#joueur_peut_jouer">joueur_peut_jouer</a></li>
+                            <li><a href="#joueur_peut_jouer_trou">joueur_peut_jouer_trou</a></li>
+                            <li><a href="#joue">joue</a></li>
+                            <li><a href="#jeu_grenier">jeu_grenier</a></li>
+                        </ul>
+                        
+                        <h3 id=jeu_initialiser>jeu_initialiser</h3>
+                        <img class="fonction" alt="fonction jeu_initialiser" src="image_fonction/jeu_initialiser.png">
+                        <h3 id="adversaire">adversaire</h3>
+                        <img class="fonction" alt="fonction adversaire" src="image_fonction/adversaire.png">
+                        <h3 id="trou_suivant">trou_suivant</h3>
+                        <img class="fonction" alt="fonction trou suivant" src="image_fonction/trou_suivant.png">
+                        <h3 id="jeu_afficher">jeu_afficher</h3>
+                        <img class="fonction" alt="fonction jeu_afficher" src="image_fonction/jeu_afficher.png">
+                        <h3 id="jeu_est_termine">jeu_est_termine</h3>
+                        <img class="fonction" alt="fonction jeu est termine" src="image_fonction/jeu_est_termine.png">
+                        <h3 id="jeu_ramasser_billes" >jeu_ramasser_billes</h3>
+                        <img class="fonction" alt="fonction jeu ramasser billes" src="image_fonction/jeu_ramasser_billes.png">
+                        <h3 id="joueur_peut_jouer">joueur_peut_jouer</h3>
+                        <img class="fonction" alt="fonction joueur peut jouer" src="image_fonction/joueur_peut_jouer.png">
+                        <h3 id="joueur_peut_jouer_trou">joueur_peut_jouer_trou</h3>
+                        <img class="fonction" alt="joueur peut jouer trou" src="image_fonction/joueur_peut_jouer_trou.png">
+                        <h3 id="joue">joue</h3>
+                        <img class="fonction" alt="fonction joue" src="image_fonction/joue.png">
+                        <h3 id="jeu_grenier">jeu_grenier</h3>
+                        <img class="fonction" alt="fonction jeu_grenier" src="image_fonction/jeu_grenier.png">
+                        <br>
+                        <p><a href="explication_ia.html">>>Page suivante>></a></p>
+                        
+                    </div>
+                <div>
+                    <div id="Telecharger" class="partie">
+                        <a href="awale.zip" download="awale.zip">Télécharger le code</a>
+                    <br/>
+                    <a style="font-size: 10px" href="mailto:kyllian.ronne@etud.univ-angers.fr">kyllian.ronne@etud.univ-angers.fr</a>
+                    <a style="font-size: 10px" href="mailto:martmoreau@etud.univ-angers.fr">martmoreau@etud.univ-angers.fr</a>
+                </div>                 
+                </div>
+                </div>
+            </main>
+            
+        </div>
+    </body>
+
+
+</html>
