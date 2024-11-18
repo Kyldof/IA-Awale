@@ -1,94 +1,123 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>Présentation du projet</title>
-        <meta charset="UTF-8">
-        <link href="CSS/main.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div id="corp">
-            <header>
-                <div id="menu">
-                    <img id="logo" alt="logo université" src="images/logo/ua_h_blanc_ecran.png" onclick="window.location.href='https://www.univ-angers.fr/fr/index.html'">
-                    <ul>
-                        <li><a href="groupe.html">Groupe</a></li>
-                        <li>
-                            <a href="explication_jeu.html">Explication</a>
-                            <div class="hiden">
-                                <a href="explication_jeu.html#Jeu">Jeu</a>
-                                <a href="explication_ia.html#IA">IA</a>                
-                            </div>
 
-                        </li>
-                        
-                        <li><a href="main.html">Menu</a></li>
+<head>
+    <title>Présentation du projet</title>
+    <meta charset="UTF-8">
+    <link href="CSS/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-                    
-                    </ul>
-                </div>
-            </header>
-            <main>
-                <div class="titre">
-                <h1>Projet Awale</h1>
-                <h2>Moreau Martin<br>Ronné Kyllian</h2>
-                </div>
-                <div class="principal">
-                    <div id="presentation" class="partie">
-                        <h2>Présentation de l'Awalé</h2>
-                        <p>L'awalé ou awélé est un jeu de société à deux joueurs créé en Afrique.<br/>
-                            C'est le plus répandu des jeux de la famille Mancala (jeux de semailles), ensemble de jeux africains de type « compter et capturer » dans lesquels on distribue des cailloux dans des coupelles ou des trous. <br/>
-                            Il est disposé de façon à ce que chaque joueur possède 6 cases, contenant 4 cailloux chacune, en face de lui. Le but du jeu est d'être celui qui à la fin de la partie en possède le plus. <br/>
-                            Il existe énormément de variantes à ce jeu, nous avons donc simplifié quelques règles afin de nous faciliter la programmation de ce dernier.</p>
-                    </div>
+</head>
 
-                    <div id="regles" class="partie">
-                        <h2>Règles du jeu</h2>
-                        <h3>Commencement:</h3>
-                        <p>- La partie commence avec chacune des cases du plateau rempli de quatre cailloux chacune hormis les greniers des joueurs qui sont vides.</p>
-
-                        <img class="schema" alt="plateau de jeu de départ" src="images/No_background/Situation_de_départ-removebg-preview.png">
-                            
-                        <p>- Le premier joueur choisit une case à jouer parmi ses six et distribue ses cailloux dans le sens antihoraire.
-                        Si jamais il passe par son grenier il y dépose un caillou mais n'en dépose pas dans celui de son adversaire.</p>
-                        
-                        <img class="schema" alt="premier coup" src="images/No_background/Premier_coup-removebg-preview.png">
-
-                        <p>- C'est maintenant au tour du second joueur de jouer une de ses cases et ainsi de suite jusqu'à la fin de la partie.</p>
-                        
-                        <h3>Quand est-ce qu'une partie se termine?</h3>
-                        <p>Une partie est terminée lorsqu'un joueur ne possède plus aucun caillou dans ses cases. On ramasse donc tous les cailloux restants du plateau et on les dépose dans le grenier adverse.
-                        </p>
-                        
-                        <img class="schema" alt="fin de partie 1)" src="images/No_background/fin_de_partie-removebg-preview.png">
-                        <img class="schema" alt="fin de partie 2)" src="images/No_background/fin_de_partie_2_-removebg-preview.png">
-                        
-
-                        <h3>Comment faire pour gagner des cailloux?</h3>
-                        <p>Il y a 2 manières de récupérer des cailloux, la première est de se les distribuer un à un dans son grenier mais cela est long et peu efficace.<br/>
-                        La deuxième manière est de terminer sa distribution dans une de ses cases vides, ce qui nous permet de voler les cailloux adverses de la case opposée.</p>
-                        
-                        <img class="schema" alt="ramassage de cailloux 1" src="images/No_background/Ramassage_de_cailloux-removebg-preview.png">
-                        <img class="schema" alt="ramassage de cailloux 2" src="images/No_background/Ramassage_de_cailloux__2_-removebg-preview.png">
-                        <img class="schema" alt="ramassage de cailloux 3" src="images/No_background/Ramassage_de_cailloux__3_-removebg-preview.png">
-                        
-                        
-                    </div>
-                    <div id="Telecharger" class="partie">
-                        <a href="awale.zip" download="awale.zip">Télécharger le code</a>
-                    <br/>
-                    <a style="font-size: 10px" href="mailto:kyllian.ronne@etud.univ-angers.fr">kyllian.ronne@etud.univ-angers.fr</a>
-                    <a style="font-size: 10px" href="mailto:martmoreau@etud.univ-angers.fr">martmoreau@etud.univ-angers.fr</a>
-                </div>               
-                </div>
-            </main>
-
-            <footer>
-
-            </footer>
+<body>
+    <header class="bg-dark py-3">
+        <div class="container d-flex align-items-center justify-content-between">
+            <img id="logo" alt="logo université" src="images/logo/ua_h_blanc_ecran.png" class="img-fluid" style="cursor:pointer; height: 50px;" onclick="window.location.href='https://ent.univ-angers.fr'">
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="groupe.html">Groupe</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explication</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="explication_jeu.html#Jeu">Jeu</a></li>
+                            <li><a class="dropdown-item" href="explication_ia.html#IA">IA</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Menu</a></li>
+                </ul>
+            </nav>
         </div>
-    </body>
+    </header>
+
+    <main class="container py-5">
+        <div class="text-center mb-5">
+            <h1>Projet Awale</h1>
+            <h2>Moreau Martin <br> Ronné Kyllian</h2>
+        </div>
+
+        <div id="presentation" class="row mb-4">
+            <div class="col-12">
+                <h2 class="text-center mb-3">Présentation de l'Awalé</h2>
+                <p>L'awalé ou awélé est un jeu de société à deux joueurs créé en Afrique.<br />
+                    C'est le plus répandu des jeux de la famille Mancala (jeux de semailles), ensemble de jeux
+                    africains de type « compter et capturer » dans lesquels on distribue des cailloux dans des
+                    coupelles ou des trous. <br />
+                    Il est disposé de façon à ce que chaque joueur possède 6 cases, contenant 4 cailloux chacune, en
+                    face de lui. Le but du jeu est d'être celui qui à la fin de la partie en possède le plus. <br />
+                    Il existe énormément de variantes à ce jeu, nous avons donc simplifié quelques règles afin de
+                    nous faciliter la programmation de ce dernier.</p>
+            </div>
+        </div>
+
+        <div id="regles" class="row mb-4">
+            <div class="col-12">
+                <h2 class="text-center mb-3">Règles du jeu</h2>
+                <h3>Commencement:</h3>
+                <p>- La partie commence avec chacune des cases du plateau rempli de quatre cailloux chacune hormis
+                    les greniers des joueurs qui sont vides.</p>
+
+                <img class="img-fluid mx-auto d-block" alt="plateau de jeu de départ"
+                    src="images/No_background/Situation_de_départ-removebg-preview.png">
+
+                <p>- Le premier joueur choisit une case à jouer parmi ses six et distribue ses cailloux dans le sens
+                    antihoraire.
+                    Si jamais il passe par son grenier il y dépose un caillou mais n'en dépose pas dans celui de son
+                    adversaire.</p>
+
+                <img class="img-fluid mx-auto d-block" alt="premier coup"
+                    src="images/No_background/Premier_coup-removebg-preview.png">
+
+                <p>- C'est maintenant au tour du second joueur de jouer une de ses cases et ainsi de suite jusqu'à
+                    la fin de la partie.</p>
+
+                <h3>Quand est-ce qu'une partie se termine?</h3>
+                <p>Une partie est terminée lorsqu'un joueur ne possède plus aucun caillou dans ses cases. On ramasse
+                    donc tous les cailloux restants du plateau et on les dépose dans le grenier adverse.</p>
+
+                <img class="img-fluid mx-auto d-block" alt="fin de partie 1)"
+                    src="images/No_background/fin_de_partie-removebg-preview.png">
+                <img class="img-fluid mx-auto d-block" alt="fin de partie 2)"
+                    src="images/No_background/fin_de_partie_2_-removebg-preview.png">
+
+                <h3>Comment faire pour gagner des cailloux?</h3>
+                <p>Il y a 2 manières de récupérer des cailloux, la première est de se les distribuer un à un dans
+                    son grenier mais cela est long et peu efficace.<br />
+                    La deuxième manière est de terminer sa distribution dans une de ses cases vides, ce qui nous
+                    permet de voler les cailloux adverses de la case opposée.</p>
+
+                <img class="img-fluid mx-auto d-block" alt="ramassage de cailloux 1"
+                    src="images/No_background/Ramassage_de_cailloux-removebg-preview.png">
+                <img class="img-fluid mx-auto d-block" alt="ramassage de cailloux 2"
+                    src="images/No_background/Ramassage_de_cailloux__2_-removebg-preview.png">
+                <img class="img-fluid mx-auto d-block" alt="ramassage de cailloux 3"
+                    src="images/No_background/Ramassage_de_cailloux__3_-removebg-preview.png">
+            </div>
+        </div>
+
+        <div id="Telecharger" class="row mb-4">
+            <div class="col-12 text-center">
+                <a href="awale.zip" download="awale.zip" class="btn btn-primary mb-3">Télécharger le code</a>
+                <br />
+                <a href="mailto:kyllian.ronne@etud.univ-angers.fr" class="d-block" style="font-size: 10px;">
+                    kyllian.ronne@etud.univ-angers.fr
+                </a>
+                <a href="mailto:martmoreau@etud.univ-angers.fr" class="d-block" style="font-size: 10px;">
+                    martmoreau@etud.univ-angers.fr
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Awale Project</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>

@@ -1,82 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>Développement application</title>
-        <meta charset="UTF-8">
-        <link rel="icon" type="image/png" sizes="16x16" href="images/logo/risitas.png">
-        <link href="CSS/main.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div id="corp">
-            <header>
-                <div id="menu">
-                    <img id="logo" alt="logo université" src="images/logo/ua_h_blanc_ecran.png" onclick="window.location.href='https://ent.univ-angers.fr'">
-                    <ul>
-                        <li><a href="groupe.html">Groupe</a></li>
-                        <li>
-                            <a href="explication_jeu.html">Explication</a>
-                            <div class="hiden">
-                                <a href="explication_jeu.html#Jeu">Jeu</a>
-                                <a href="explication_ia.html#IA">IA</a>                
-                            </div>
-
-                        </li>
-                        <li><a href="main.html">Menu</a></li>
-
-                    
-                    </ul>
-                </div>
-            </header>
-            <main>
-                <div class="titre">
-                    <h1>Développement du jeu et son IA</h1>
-                </div>
-                
-                    <div id="IA" class="partie">
-                        <h2>Développement de l'IA</h2>
-                        <p>Pour la conception de notre IA nous avons décidé de nous concentrer sur l’algorithme <a href="https://fr.wikipedia.org/wiki/Algorithme_minimax">Min-Max</a> conseillé par notre professeur référant. Nous avons donc créé un fichier ia1.py contenant 3 fonctions :</p>
-                        <p>La première est la fonction « ia » qui s’occupe de renvoyer la case qu’il considère comme étant la meilleure en appelant la fonction « max_awale » avec comme paramètre le plateau de jeu, le joueur et la profondeur de recherche du meilleur coup.</p>
-                        <img alt="fonction ia" class="fonction" src="image_fonction/ia.png">
-                        <p>Ensuite nous avons max_awale, sa fonction est de trouver de façon récursif les meilleurs coups possibles, que peut faire l’ia pour maximiser ses gains, afin de gagner la partie. Pour que la partie récursive fonctionne, il est nécessaire qu’elle appelle la dernière fonction du programme, « min_awale », qui s’occupe ici de trouver les meilleurs coups de l’adversaire. Ces deux fonctions vont donc s’appeler récursivement en soustrayant 1 à la profondeur à chaque appel. Jusqu’à ce que la profondeur tombe à 0 ou qu’il trouve une solution pour que le jeu soit fini. Pour ensuite remonter ces mêmes appels récursifs et renvoyer à la fin le coup qu’il considère le plus avantageux à l’intelligence artificielle.</p>
-                        <img alt="fonction maw_awale" class="fonction" src="image_fonction/max_awale.png">
-                        <img alt="fonction min_awale" class="fonction" src="image_fonction/min_awale.png">
-                        <p>Contrairement au développement du jeu, l’intelligence artificielle nous a donné du fil à retordre.</p>
-                        <p>Premièrement la compréhension de l’algorithme min-max nous a pris pas mal de temps à assimiler et encore plus de temps à adapter à notre jeu car les explications qu’on a pu trouvé sur internet, comme <a href="https://www.youtube.com/watch?v=l-hh51ncgDI&pp=ugMICgJmchABGAE%3D">celle-là</a> ou encore <a href="https://www.youtube.com/watch?v=fInYh90YMJU">celle-ci</a>, n’était pas adapté pour l’utilisation qu’on voulait en faire.</p>
-                        <p>Ensuite, réfléchir de façon récursive était quelque chose d’assez difficile mais nous avons réussi en faisant beaucoup de <a href="#schema">schémas</a> ainsi quand faisant beaucoup de débogage afin de voir comment notre IA se comportait et voir s’il « réfléchissait » bien comme nous l’avions prévu.</p>
-                        
-                        <div id="schema">
-                            <h3 style="color: #FF5757; font-weight: bold">IA</h3>
-                            <h3 style="color: #C9E265; font-weight: bold">adversaire</h3>
-                        
-                        <p>On descend à la profondeur choisie, ce qui nous donne le résultat des gains pour chaque suite de coups possibles.</p>
-                        <img alt="schema 1" src="images/No_background/schema/schema_1.png">
-                            <p>ensuite on remonte l'arbre des possibilités de façon récursives en choisissant une valeur max pour le tour de l'IA ou alors une valeur min pour le tour de l'adversaire.</p>
-                        <img alt="schema 2" src="images/No_background/schema/schema_2.png">
-                        <img alt="schema 3" src="images/No_background/schema/schema_3.png">
-                            <p>ce qui nous donne le chemin à suivre le plus rentable pour l'IA (ici en rouge).</p>
-                        <img alt="schema 4" src="images/No_background/schema/schema_4.png">
-                        </div>
-                        
-                        <p><a href="explication_jeu.html">&lt;&lt;page précédente&lt;&lt;</a></p>
-
-                        
-
-                    </div>
-                <div>
-                    <div id="Telecharger" class="partie">
-                        <a href="awale.zip" download="awale.zip">Télécharger le code</a>
-                    <br/>
-                    <a style="font-size: 10px" href="mailto:kyllian.ronne@etud.univ-angers.fr">kyllian.ronne@etud.univ-angers.fr</a>
-                    <a style="font-size: 10px" href="mailto:martmoreau@etud.univ-angers.fr">martmoreau@etud.univ-angers.fr</a>
-                </div>                 
-                </div>
-            </main>
-            
+<head>
+    <title>Développement application</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex align-items-center justify-content-between">
+            <img id="logo" src="images/logo/ua_h_blanc_ecran.png" alt="logo université" style="height: 50px; cursor: pointer;" onclick="window.location.href='https://ent.univ-angers.fr'">
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="groupe.html" class="nav-link text-white">Groupe</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">Explication</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="explication_jeu.html#Jeu" class="dropdown-item">Jeu</a></li>
+                            <li><a href="explication_ia.html#IA" class="dropdown-item">IA</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="main.html" class="nav-link text-white">Menu</a></li>
+                </ul>
+            </nav>
         </div>
-    </body>
+    </header>
 
+    <main class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold">Développement du jeu et son IA</h1>
+        </div>
 
+        <section id="IA" class="mb-5">
+            <h2>Développement de l'IA</h2>
+            <p>Pour la conception de notre IA, nous avons décidé de nous concentrer sur l’algorithme <a href="https://fr.wikipedia.org/wiki/Algorithme_minimax">Min-Max</a>, conseillé par notre professeur référant. Nous avons donc créé un fichier <code>ia1.py</code> contenant 3 fonctions :</p>
+            
+            <div class="my-4">
+                <p>La première est la fonction « <code>ia</code> », qui s’occupe de renvoyer la case qu’il considère comme étant la meilleure, en appelant la fonction « <code>max_awale</code> » avec comme paramètres le plateau de jeu, le joueur, et la profondeur de recherche du meilleur coup.</p>
+                <img src="image_fonction/ia.png" alt="fonction ia" class="img-fluid my-3">
+            </div>
+            
+            <div class="my-4">
+                <p>Ensuite, nous avons <code>max_awale</code>. Sa fonction est de trouver, de façon récursive, les meilleurs coups possibles que peut faire l’IA pour maximiser ses gains et gagner la partie. Pour que cette récursivité fonctionne, elle appelle la dernière fonction du programme, <code>min_awale</code>, qui trouve les meilleurs coups de l’adversaire. Ces deux fonctions s’appellent récursivement en réduisant la profondeur de recherche jusqu’à ce qu’elle atteigne 0 ou qu’une solution soit trouvée.</p>
+                <img src="image_fonction/max_awale.png" alt="fonction max_awale" class="img-fluid my-3">
+                <img src="image_fonction/min_awale.png" alt="fonction min_awale" class="img-fluid my-3">
+            </div>
+            
+            <p>Contrairement au développement du jeu, l’intelligence artificielle nous a donné du fil à retordre...</p>
+        </section>
+
+        <section id="schema" class="mb-5">
+            <h3 class="text-danger">IA</h3>
+            <h3 class="text-success">Adversaire</h3>
+            <p>Nous descendons à la profondeur choisie, ce qui donne les gains pour chaque suite de coups possibles.</p>
+            <img src="images/No_background/schema/schema_1.png" alt="schema 1" class="img-fluid my-3">
+            <p>Ensuite, nous remontons l’arbre de façon récursive en choisissant la valeur max pour l’IA ou min pour l’adversaire.</p>
+            <img src="images/No_background/schema/schema_2.png" alt="schema 2" class="img-fluid my-3">
+            <img src="images/No_background/schema/schema_3.png" alt="schema 3" class="img-fluid my-3">
+            <p>Cela nous donne le chemin le plus rentable pour l’IA (ici en rouge).</p>
+            <img src="images/No_background/schema/schema_4.png" alt="schema 4" class="img-fluid my-3">
+        </section>
+
+        <div class="text-center">
+            <a href="awale.zip" download class="btn btn-primary mb-3">Télécharger le code</a><br>
+            <a href="mailto:kyllian.ronne@etud.univ-angers.fr" class="text-muted d-block">kyllian.ronne@etud.univ-angers.fr</a>
+            <a href="mailto:martmoreau@etud.univ-angers.fr" class="text-muted d-block">martmoreau@etud.univ-angers.fr</a>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-3 text-center">
+        &copy; 2024 - Projet Awale
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
